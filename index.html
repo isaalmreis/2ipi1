@@ -1,30 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Receitas Deliciosas</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Quicksand", sans-serif;
+            font-style: normal;
             margin: 0;
             padding: 0;
             background-color: #f4f4f9;
             color: #333;
         }
+
         header {
             background-color: #333;
             color: #fff;
             text-align: center;
             padding: 20px 0;
         }
+
         h1 {
             margin: 0;
+            font-weight: 100;
         }
+
         .container {
             width: 80%;
             margin: 20px auto;
         }
+
         .recipe-card {
             background-color: #fff;
             padding: 20px;
@@ -32,16 +39,22 @@
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
+
         .recipe-card h2 {
             color: #2e8b57;
+            font-weight: 300;
         }
-        .ingredients, .instructions {
+
+        .ingredients,
+        .instructions {
             margin: 10px 0;
         }
+
         ul {
             list-style-type: square;
             padding-left: 20px;
         }
+
         footer {
             text-align: center;
             padding: 10px;
@@ -51,8 +64,17 @@
             width: 100%;
             bottom: 0;
         }
+        img{
+            width: 100%;
+            height: auto;
+            border-radius: 8px
+        }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
     <header>
@@ -61,6 +83,7 @@
 
     <div class="container">
         <div class="recipe-card">
+            <img src="marguerita.jpg" alt="Pizza de Margherita">
             <h2>Pizza Margherita</h2>
             <div class="ingredients">
                 <h3>Ingredientes:</h3>
@@ -74,12 +97,15 @@
             </div>
             <div class="instructions">
                 <h3>Modo de Preparo:</h3>
-                <p>Preaqueça o forno a 180°C. Espalhe o molho de tomate sobre a massa de pizza. Adicione o queijo mussarela e leve ao forno por 15-20 minutos ou até que o queijo esteja derretido e a massa crocante. Retire do forno e adicione as folhas de manjericão. Regue com azeite de oliva antes de servir.</p>
+                <p>Preaqueça o forno a 180°C. Espalhe o molho de tomate sobre a massa de pizza. Adicione o queijo
+                    mussarela e leve ao forno por 15-20 minutos ou até que o queijo esteja derretido e a massa crocante.
+                    Retire do forno e adicione as folhas de manjericão. Regue com azeite de oliva antes de servir.</p>
             </div>
         </div>
 
         <div class="recipe-card">
-            <h2>Bolo de Chocolate Simples</h2>
+            <img src="bolo-de-chocolate-com-cobertura.webp" alt="Bolo de chocolate">
+            <h2>Bolo de Chocolate Com Cobertura</h2>
             <div class="ingredients">
                 <h3>Ingredientes:</h3>
                 <ul>
@@ -94,7 +120,9 @@
             </div>
             <div class="instructions">
                 <h3>Modo de Preparo:</h3>
-                <p>Preaqueça o forno a 180°C. Em uma tigela, misture todos os ingredientes secos. Em outra tigela, bata os ovos com o óleo e o leite. Combine as misturas, mexa bem e adicione o fermento. Despeje a massa em uma forma untada e enfarinhada e asse por 30-40 minutos. Deixe esfriar antes de servir.</p>
+                <p>Preaqueça o forno a 180°C. Em uma tigela, misture todos os ingredientes secos. Em outra tigela, bata
+                    os ovos com o óleo e o leite. Combine as misturas, mexa bem e adicione o fermento. Despeje a massa
+                    em uma forma untada e enfarinhada e asse por 30-40 minutos. Deixe esfriar antes de servir.</p>
             </div>
         </div>
     </div>
@@ -104,4 +132,5 @@
     </footer>
 
 </body>
+
 </html>
