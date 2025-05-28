@@ -62,68 +62,84 @@
             height: auto;
             border-radius: 8px
         }
-    </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-</head>
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-<body>
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #fff8f0;
+    color: #333;
+    line-height: 1.6;
+    padding: 10px;
+}
 
-    <header>
-        <h1>Receitas Deliciosas</h1>
-    </header>
+header {
+    text-align: center;
+    padding: 20px 10px;
+    background-color: #ff6347;
+    color: white;
+}
 
-    <div class="container">
-        <div class="recipe-card">
-            <img src="marguerita.jpg" alt="Pizza de Margherita">
-            <h2>Pizza Margherita</h2>
-            <div class="ingredients">
-                <h3>Ingredientes:</h3>
-                <ul>
-                    <li>1 massa de pizza pronta</li>
-                    <li>200g de molho de tomate</li>
-                    <li>200g de queijo mussarela</li>
-                    <li>Folhas de manjericão</li>
-                    <li>Azeite de oliva a gosto</li>
-                </ul>
-            </div>
-            <div class="instructions">
-                <h3>Modo de Preparo:</h3>
-                <p>Preaqueça o forno a 180°C. Espalhe o molho de tomate sobre a massa de pizza. Adicione o queijo
-                    mussarela e leve ao forno por 15-20 minutos ou até que o queijo esteja derretido e a massa crocante.
-                    Retire do forno e adicione as folhas de manjericão. Regue com azeite de oliva antes de servir.</p>
-            </div>
-        </div>
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
 
-        <div class="recipe-card">
-            <img src="bolo-de-chocolate-com-cobertura.webp" alt="Bolo de chocolate">
-            <h2>Bolo de Chocolate Com Cobertura</h2>
-            <div class="ingredients">
-                <h3>Ingredientes:</h3>
-                <ul>
-                    <li>2 xícaras de farinha de trigo</li>
-                    <li>1 xícara de açúcar</li>
-                    <li>1/2 xícara de cacau em pó</li>
-                    <li>3 ovos</li>
-                    <li>1/2 xícara de óleo</li>
-                    <li>1 xícara de leite</li>
-                    <li>1 colher de sopa de fermento em pó</li>
-                </ul>
-            </div>
-            <div class="instructions">
-                <h3>Modo de Preparo:</h3>
-                <p>Preaqueça o forno a 180°C. Em uma tigela, misture todos os ingredientes secos. Em outra tigela, bata
-                    os ovos com o óleo e o leite. Combine as misturas, mexa bem e adicione o fermento. Despeje a massa
-                    em uma forma untada e enfarinhada e asse por 30-40 minutos. Deixe esfriar antes de servir.</p>
-            </div>
-        </div>
-    </div>
+.recipe-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    padding: 15px;
+}
 
-    <footer>
-        <p>&copy; 2025 Receitas Deliciosas</p>
-    </footer>
+.recipe-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
 
-</body>
+h2 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #ff6347;
+}
 
-</html>
+h3 {
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+ul {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #ff6347;
+    color: white;
+    margin-top: 30px;
+}
+
+/* Regras para telas maiores (opcional) */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .recipe-card {
+        width: 100%;
+        max-width: 400px;
+    }
+}
